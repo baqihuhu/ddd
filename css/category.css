@@ -1,0 +1,124 @@
+/*头部部分开始*/
+html,body{
+    height: 100%;
+}
+#topbar {
+    background: url(../images/header-bg.png) repeat-x;
+    height: 42px;
+    position: absolute;
+    border-bottom: 1px solid #c0c0c0;
+    width: 100%;
+}
+
+#topbar > .icon-left, .icon-right {
+    background: url(../images/sprites.png);
+    background-size: 200px 200px;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    padding: 10px 10px;
+    background-origin: content-box;
+    background-clip: content-box;
+}
+
+#topbar > .icon-left {
+    background-position: -20px 0;
+}
+
+#topbar > .icon-right {
+    background-position: -60px 0;
+    right: 0;
+    top: 0;
+}
+
+#topbar > form {
+    padding: 5px 40px 0;
+
+}
+
+#topbar > form > input {
+    width: 100%;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+    height: 28px;
+}
+
+/*头部部分结束*/
+/*商品类型开始*/
+/*左半边*/
+#category {
+    height: 100%;
+    padding-top:42px;
+}
+
+.category-left {
+    /*height:100%*/
+    float: left;
+    /*width: 90px;*/
+    overflow: hidden;
+    height: 100%;
+}
+
+.category-left > ul > li {
+    background-color: #f3f4f5;
+    height: 50px;
+    width: 90px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.category-left > ul > li > a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid #c0c0c0;
+    border-right: 1px solid #c0c0c0;
+}
+
+.category-left > ul > li.now > a {
+    color: #d8505c;
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/*右半边*/
+.category-right {
+    height: 100%;
+    overflow: hidden;
+}
+
+.category-right > .category-right-content {
+    width: 100%;
+}
+
+.category-right > .category-right-content > a {
+    padding: 10px;
+    display: block;
+}
+
+.category-right > .category-right-content > a > img {
+    width: 100%;
+}
+
+.category-right > .category-right-content > .product {
+    width: 100%;
+}
+.category-right > .category-right-content > .product>.product-title>h3{
+    font-size: 14px;
+}
+.category-right > .category-right-content > .product>.product-content>ul>li{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+}
+.product>.product-content>ul>li>a>img{
+    width: 62px;
+    height: 62px;
+}
+.product>.product-content>ul>li>a>p{
+    font-size: 12px;
+}
+/*商品类型结束*/

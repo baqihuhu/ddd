@@ -1,0 +1,262 @@
+#layout {
+    min-width: 320px;
+    max-width: 640px;
+    background-color: #f0f0f0;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.now {
+    background-color: red;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+.border-left{
+    border-left: 1px solid #c0c0c0;
+}
+.border-top{
+    border-top: 1px solid #c0c0c0;
+}
+.border-right{
+    border-right: 1px solid #c0c0c0;
+}
+.border-bottom{
+    border-bottom: 1px solid #c0c0c0;
+}
+/*头部部分开始*/
+#header {
+    min-width: 320px;
+    max-width: 640px;
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    /*height: 40px;*/
+    z-index: 10;
+}
+
+#header > .topbar {
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+
+#header > .topbar > .icon {
+    background: url(../images/sprites.png) 0 -103px;
+    background-size: 200px 200px;
+    -wbkit-background-width: 200px 200px;
+    position: absolute;
+    left: 4px;
+    top: 2px;
+    height: 36px;
+    width: 60px;
+}
+
+#header > .topbar > form {
+    padding: 5px 50px 0 75px;
+}
+
+#header > .topbar > form > i {
+    position: absolute;
+    background: url(../images/sprites.png) -60px -109px;
+    -webkit-background-size: 200px 200px;
+    background-size: 200px 200px;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 81px;
+    top: 10px;
+}
+
+#header > .topbar > form > input {
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    padding-left: 28px;
+}
+
+#header > .topbar > .login {
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+}
+
+/*头部部分结束*/
+/*轮播图部分开始*/
+#slide {
+    overflow: hidden;
+    position: relative;
+}
+
+#slide > ul:first-child {
+    width: 1000%;
+}
+
+#slide > ul:first-child > li {
+    float: left;
+    width: 10%;
+}
+
+#slide > ul:first-child > li > a > img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+#slide > ul:last-child {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    margin-left: -50px;
+}
+
+#slide > ul:last-child > li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #f0f0f0;
+    float: left;
+    margin-left: 3px;
+}
+
+/*轮播图部分结束*/
+/*分类查询开始*/
+#category {
+    background-color: #fff;
+    padding: 5px 0;
+}
+
+#category > ul {
+    width: 100%;
+}
+
+#category > ul > li {
+    float: left;
+    width: 25%;
+}
+
+#category > ul > li > a {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#category > ul > li > a > img {
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+#category > ul > li > a > p {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+/*分类查询结束*/
+/*主体部分开始*/
+#main {
+    padding: 0 5px;
+
+}
+
+.product {
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+.product > .product-title {
+    padding-top: 7px;
+    line-height: 30px;
+}
+
+.product > .product-title > .pull-left > .seckill-icon {
+    width: 20px;
+    height: 25px;
+    background: url(../images/seckill-icon.png);
+    float: left;
+    background-size: 20px 25px;
+    margin-left: 10px;
+}
+
+.product > .product-title > .pull-left > .seckill-name {
+    float: left;
+    font-size: 14px;
+    color: #d8508c;
+    margin-left: 10px;
+}
+
+.product > .product-title > .pull-left > .seckill-time {
+    float: left;
+    text-align: center;
+    margin-left: 10px;
+    padding-top: 7px;
+}
+
+.product > .product-title > .pull-left > .seckill-time > span {
+    background-color: #000000;
+    color: #fff;
+    float: left;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+}
+
+#main > .product > .product-title > .pull-left > .seckill-time > span:nth-child(3n) {
+    color: #000000;
+    background-color: transparent;
+}
+
+#main > .product > .product-title > .pull-right {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.product > .product-content {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.product > .product-content > ul > li {
+    width: 33.33%;
+    float: left;
+
+}
+.product > .product-content > ul > li+li{
+    border-left: 1px solid #f0f0f0;
+}
+.product > .product-content > ul > li > a > img {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+.product > .product-content > ul > li > a >p{
+    font-size: 12px;
+    text-align: center;
+}
+.product>.product-title>h3{
+    font-weight: normal;
+    font-size: 16px;
+    padding-left: 10px;
+    position: relative;
+    border-bottom: 1px solid #f0f0f0;
+}
+.product>.product-title>h3::before{
+    content:"";
+    width: 3px;
+    height: 12px;
+    background-color: #d8505c;
+    position: absolute;
+    left: 4px;
+    top:8px;
+}
+.width-50{
+    width: 50%;
+}
+
+/*主体部分结束*/
